@@ -1,0 +1,5 @@
+<mat-card *ngFor="let navCardItem of cardItems()" (click)="cardClicked.emit()">
+  <mat-card-title>{{navCardItem.title}}</mat-card-title>
+  <mat-card-subtitle>{{navCardItem.description}}</mat-card-subtitle>
+  <button *ngIf="isDeleteVisible()" mat-flat-button>Delete</button>
+</mat-card>
