@@ -1,0 +1,25 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-title>Login</mat-card-title>
+
+    <p>(Use admin + 123 combo for admin usage)</p>
+
+    <form class="login-form" [formGroup]="form">
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" formControlName="username" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" />
+      </mat-form-field>
+
+      <button mat-raised-button
+              color="primary"
+              class="login-button"
+              [disabled]="form.invalid"
+              (click)="onLogin(form)">Login</button>
+    </form>
+  </mat-card>
+</div>
