@@ -1,0 +1,5 @@
+<section [@cardListAnimation]>
+  <lib-cards [cardItems]="cards()" [isDeleteVisible]="isDeleteAllowed()"/>
+</section>
+
+<button mat-raised-button class="create-button" [routerLink]="['../create']">Create a card</button>

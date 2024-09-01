@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@simple-nx/card-manager": ["libs/card-manager/src/index.ts"],
+      "@simple-nx/components": ["libs/shared/components/src/index.ts"],
+      "@simple-nx/models": ["libs/shared/models/src/index.ts"],
+      "@simple-nx/store": ["libs/shared/store/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

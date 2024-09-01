@@ -1,0 +1,11 @@
+.create-card-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.create-card-form .save-button {
+  width: 100px;
+}
